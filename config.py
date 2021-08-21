@@ -29,7 +29,7 @@ def make_initial_configs(args):
         except FileNotFoundError:
             pass
 
-    styles = ["LLVM", "Google", "Chromium", "Mozilla", "WebKit"]
+    styles = ["LLVM", "Google", "Chromium", "Mozilla", "WebKit", "Microsoft", "GNU"]
     print("Using default .clang-format selection: {}".format(styles), file=stderr)
     return [make_default_config(args.command, style) for style in styles]
 
